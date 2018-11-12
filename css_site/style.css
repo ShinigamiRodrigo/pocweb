@@ -1,0 +1,14 @@
+.container-fluid{
+	border: 1px solid red;
+	background-color: #FA58F4;
+}
+
+.container{
+	border: 1px solid red;
+}
+
+.btn-secondary{
+	background-color: #FA58F4 !important;
+	border: none !important;
+    text-decoration: none !important;
+}
