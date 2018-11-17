@@ -3,6 +3,14 @@
 	padding: 0px;
 }
 
+.desce{
+	margin-top: 10%;
+}
+
+.direita{
+	margin-left: 30%;
+}
+
 .menu-color{
 	background-color: #F6CEEC;
 }
@@ -34,6 +42,6 @@ body{
 }
 
 .centralizar{
-  margin: 0 auto !important;
-  float: none !important;
+  margin: 0 auto;
+  float: none;
 }
