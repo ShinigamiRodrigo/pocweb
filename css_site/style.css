@@ -1,14 +1,39 @@
 .container-fluid{
 	border: 1px solid red;
-	background-color: #FA58F4;
+	padding: 0px;
 }
 
-.container{
-	border: 1px solid red;
+.menu-color{
+	background-color: #F6CEEC;
 }
 
-.btn-secondary{
-	background-color: #FA58F4 !important;
-	border: none !important;
-    text-decoration: none !important;
+
+body{
+	background-color: #F6CEEC;
+}
+.card .card-body{
+	/*border: 1px solid black;*/
+}
+
+.card-body{
+	height: 70px;
+	transition: height 2seg;
+}
+.card:hover .card-body{
+	height: 200px;
+}
+
+.fundo-card-lol{
+	background-color: #E2A9F3;
+}
+.fundo-card-ow{
+	background-color: #E066FF;
+}
+.fundo-card-lis{
+	background-color: #B0E2FF;
+}
+
+.centralizar{
+  margin: 0 auto !important;
+  float: none !important;
 }
