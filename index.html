@@ -1,223 +1,491 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Site</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <!-- Icone da aba (foto do meu Git) gerado em https://www.convertico.com/ -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
- 
-  <!-- Configurando o idioma -->
-  <meta charset="UTF-8">
-  <div lang="pt-br"></div>
-  <div lang="en"></div>
-  <div lang="es"></div>
+    <!-- Title -->
+    <title>PocGeek</title>
 
- <!-- Required meta tags / configurando a responsividade -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Site CSS -->
-  <link rel="stylesheet" type="text/css" href="css_site/style.css">
-  <link rel="stylesheet" type="text/css" href="css_site/effects.css">
-  
-  <!-- configurando o site para os buscadores --> 
-  <meta name="description" content="Site que reúne matérias e artigos relacionados a games, jogadores e estilo de vida"/><!-- indica aos buscadores uma breve descrição do seu site -->
-  <meta name="keywords" content="jogos, games, jogadores, gamer, consoles"/> <!-- Auxilia os buscadores a identificar quais os assuntos do site -->
-  <meta name="robots" content="index,follow"> <!-- Faz com que a página que contenha esta meta tag e as urls referenciadas nelas, sejam indexadas pelos buscadores -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <!-- Define a codificação deste conteúdo, facilitando o entendimento de que a página está em HTML -->
-  <meta http-equiv="content-language" content="pt-br, en, es"/> <!-- Declara os idiomas utilizados no conteúdo da página -->
-  <meta name="generator" content="Sublime Text 3"/> <!-- Indica qual software foi utilizado na criação -->
-  <meta http-equiv="pragma" content="yes"/> <!-- É feito um armazenamento em cache da página -->
-  <meta name="revisit-after" content="30 days"/> <!-- Comunica-se com os servidores de proxy para informar de quanto em quanto tempo a página deve ser revisitada para refazer o cache -->
-  <meta http-equiv="imagetoolbar" content="no" /> <!-- Elimina no IE a barra de opções que aparece ao passar o mouse por cima de uma imagem -->
-  <meta name="rating" content="general"/> <!-- Indica qual a classificação etária da página, utilizar "general" para livre, "mature" para +18 e "14 years" para adolescentes -->
-
-  <!-- Assinatura do autor da página -->
-  <meta name="author" content="Meet me on https://github.com/MoniqueFerreira"/> 
-  <meta name="author" content="Meet me on https://github.com/ShinigamiRodrigo"/> 
 </head>
 
 <body>
-
-  <!--BARRA MENU-->
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light menu-color">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(Página atual)</span></a>
-        </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Games
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="pages_site/lol.html">League of Legends</a>
-            <a class="dropdown-item" href="pages_site/lis.html">Life is Strange</a>
-            <a class="dropdown-item" href="pages_site/ow.html">Overwatch</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages_site/sobre.html">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages_site/contato.html">Contato</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-      </form>
-    </div>
-  </nav>
-
-  <!--BACKGROUND-->
-  <img src="img/b.jpg" class="img-fluid w-100" alt="Imagem responsiva">
-</div>
-
-<!--CONTAINER DO CORPO DO SITE-->
-<div class="container">
- 
-     <center><button type="button" class="btn btn-warning">LEAGUE OF LEGENDS</button></center>
-    <div class="card-group">
-   <div class="card hovereffect">
-        <img class="card-img-top" src="img/ori.jpeg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-lol">
-          <h2 class="card-title">Orianna Vitoriosa</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-      </div>
-
- <div class="card hovereffect">
-        <img class="card-img-top" src="img/kat.jpg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-lol">
-          <h2 class="card-title">Katarina</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-        </div>
-      </div>
-
- <div class="card hovereffect">
-        <img class="card-img-top" src="img/xayah.jpg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-lol">
-          <h2 class="card-title">Xayah</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-        </div>
-      </div> 
     </div>
 
-     <center>LIFE IS STRANGE</center>
-    <div class="card-group">
-   <div class="card hovereffect">
-        <img class="card-img-top" src="img/lis.jpg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-lis">
-          <h2 class="card-title">Life is Strange</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-        </div>
-      </div>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area wow fadeInDown" data-wow-delay="500ms">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        </div>
 
- <div class="card hovereffect">
-        <img class="card-img-top" src="img/lis-max.jpg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-lis">
-          <h2 class="card-title">Max</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                        <!-- Search & Login Area -->
+                        <div class="search-login-area d-flex align-items-center">
+                            <!-- Top Search Area -->
+                            <div class="top-search-area">
+                                <form action="#" method="post">
+                                    <input type="search" name="top-search" id="topSearch" placeholder="Search">
+                                    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <!-- Login Area -->
+                            <div class="login-area">
+                                <a href="#"><span>Login / Cadastro</span> <i class="fa fa-lock" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>  
 
- <div class="card hovereffect">
-        <img class="card-img-top" src="img/lis-r.png" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-lis">
-          <h2 class="card-title">Rachel</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <!-- Navbar Area -->
+        <div class="egames-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="egamesNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Início</a></li>
+                                    <li><a href="game-review.html">Games</a>
+                                        <ul class="dropdown">
+                                            <li><a href="game-review.html">Game Reviews</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                        </ul>
+                                    </li>
+									<li><a href="game-review.html">Séries</a>
+                                        <ul class="dropdown">
+                                            <li><a href="game-review.html">Séries Reviews</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--<li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="post.html">Articles</a></li>
+                                            <li><a href="single-post.html">Single Articles</a></li>
+                                            <li><a href="game-review.html">Game Review</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>-->
+                                    <li><a href="post.html">Artigos</a>
+                                        <ul class="dropdown">
+                                            <li><a href="post.html">Artigos</a></li>
+                                            <li><a href="single-post.html">Single Articles</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="single-game-review.html">Reviews</a>
+                                        <ul class="dropdown">
+                                            <li><a href="game-review.html">Game Review</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contato</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div> 
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
+        <!-- Hero Post Slides -->
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Slide -->
+            <div class="single-slide bg-img bg-overlay" style="background-image: url(img/bg-img/sabrina.jpg);">
+                <!-- Blog Content -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                                <p data-animation="fadeInUp" data-delay="300ms">#Séries</p>
+                                <h2 data-animation="fadeInUp" data-delay="400ms" style="font-size: 46px">O Mundo Sombrio de Sabrina</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-slide bg-img bg-overlay" style="background-image: url(img/bg-img/dmc5.jpg);">
+                <!-- Blog Content -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                                <p data-animation="fadeInUp" data-delay="300ms">#Games</p>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Devil May Cry 5</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Slide -->
+            <div class="single-slide bg-img bg-overlay" style="background-image: url(img/bg-img/luci2.jpg);">
+                <!-- Blog Content -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                                <p data-animation="fadeInUp" data-delay="300ms">#Séries</p>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Lúcifer</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="single-slide bg-img bg-overlay" style="background-image: url(img/bg-img/nier.jpg);">
+                <!-- Blog Content -->
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                                <p data-animation="fadeInUp" data-delay="300ms">#Games</p>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">NieR: Automata</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus, egestas tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+    <!-- ##### Hero Area End ##### -->
 
-      <center>Overwatch</center>
-    <div class="card-group">
-   <div class="card hovereffect">
-        <img class="card-img-top" src="img/ow.png" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-ow">
-          <h2 class="card-title">Tracer</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+  
+    <!-- ##### Monthly Picks Area Start ##### -->
+    <section class="monthly-picks-area section-padding-100 bg-pattern">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="left-right-pattern"></div>
+                </div>
+            </div>
         </div>
-      </div>
 
- <div class="card hovereffect">
-        <img class="card-img-top" src="img/ow2.jpg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-ow">
-          <h2 class="card-title">Widowmaker</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Title -->
+                    <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">Recomendações</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">#Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="false">#Séries</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>  
 
- <div class="card hovereffect">
-        <img class="card-img-top" src="img/ow3.jpg" alt="Imagem de capa do card">
-        <div class="card-body fundo-card-ow">
-          <h2 class="card-title">Sombra</h2>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <div class="tab-content wow fadeInUp" data-wow-delay="500ms" id="myTabContent">
+            <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                <!-- Popular Games Slideshow -->
+                <div class="popular-games-slideshow owl-carousel">
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/tw3.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">The Witcher 3</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/skyrim.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">The Elder Scrolls V: Skyrim</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/wd2.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Watch Dogs 2</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/ts4.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">The Sims 4</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/dota2.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Dota 2</a>                      
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/lol.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">League of Legends</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/ff.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Final Fantasy XV</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/ac.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Assassins Creed</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                <!-- Latest Games Slideshow -->
+                <div class="latest-games-slideshow owl-carousel">
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/mr.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Mr.Robot</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/supergirl.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Supergirl</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/luci3.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Lúcifer</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/flash.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Flash</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/house.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Dr.House</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/rw.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">13 Reasons Why</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/got.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Game of Thrones</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Games -->
+                    <div class="single-games-slide">
+                        <img src="img/bg-img/bb.jpg" alt="">
+                        <div class="slide-text">
+                            <a href="#" class="game-title">Breaking Bad</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div> 
-    </div>
+    </section>
+    <!-- ##### Monthly Picks Area End ##### -->
 
-</div>
-   
+    <!-- ##### Articles Area Start ##### -->
+    <section class="latest-articles-area section-padding-100-0 bg-img bg-pattern bg-fixed" style="background-image: url(img/bg-img/5.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="mb-100">
+                        <!-- Title -->
+                        <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">Artigos Recentes</h2>
 
-   
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="article-thumbnail">
+                                <img src="img/bg-img/kda.jpg" alt="">
+                            </div>
+                            <div class="article-content"><br>
+                                <a href="single-post.html" class="post-title">League of Legends: K/DA Novidades</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">20 Novembro, 2018</a>
+                                    <a href="#" class="post-comments">2 Comentários</a>
+                                </div>
+                            </div>
+                        </div>
 
-<!--
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <div class="hovereffect">
-        <img class="img-responsive" src="img/xayah.jpg" alt="">
-        <div class="overlay">
-          <h2>Effect 12</h2>
-          <p>
-           <a href="#">LINK HERE</a>
-         </p>
-       </div>
-     </div>
-   </div>-->
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
+                            <div class="article-thumbnail">
+                                <img src="img/bg-img/alien.jpg" alt="">
+                            </div>
+                            <div class="article-content"><br><br><br>
+                                <a href="single-post.html" class="post-title">Alien Isolation: Análise</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">20 Novembro, 2018</a>
+                                    <a href="#" class="post-comments">2 Comentários</a>
+                                </div>
+                            </div>
+                        </div>
 
-    <!--<div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-      <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/morgana.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-       <img class="d-block w-100" src="img/jinx.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/xayah.jpg" alt="Third slide">
-      </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <span class="sr-only">Next</span>
-      </a>
-      </div>
-    </div>-->
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
+                            <div class="article-thumbnail">
+                                <img src="img/bg-img/spiderman.jpg" alt="">
+                            </div>
+                            <div class="article-content"><br><br>
+                                <a href="single-post.html" class="post-title">Sony: Homem-aranha </a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">20 Novembro, 2018</a>
+                                    <a href="#" class="post-comments">2 Comentários</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Articles Area End ##### -->
 
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
 
+        <!-- Copywrite Area -->
+        <div class="copywrite-content">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-sm-5">
+                        <!-- Copywrite Text -->
+                        <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    </div>
+                    <div class="col-12 col-sm-7">
+                        <!-- Footer Nav -->
+                        <div class="footer-nav">
+                            <ul>
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="game-review.html">Games</a></li>
+                                <li><a href="game-review.html">Séries</a></li>
+                                <li><a href="post.html">Artigos</a></li>
+                                <li><a href="single-game-review.html">Reviews</a></li>
+                                <li><a href="contact.html">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
 
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-  </html>
+</html>
